@@ -1,4 +1,4 @@
-FROM 1and1internet/ubuntu-16-apache-2.4-php-7.0:latest
+FROM 1and1internet/ubuntu-16-apache-php-7.0:latest
 MAINTAINER james.wilkins@1and1.co.uk
 ARG DEBIAN_FRONTEND=noninteractive
 WORKDIR /var/www/html
@@ -10,4 +10,3 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   chmod -R 777 /var/www && \
   chmod -R 755 /hooks /init
-  
