@@ -46,4 +46,4 @@ build:
      - TEMPLATE_UPDATER_PASSWORD=$$TEMPLATE_UPDATER_PASSWORD
      - SHARED_BUILD_STORAGE=$$SHARED_BUILD_STORAGE
     commands:
-     - python3 -u/scripts/images/publish.py
+     - python3 -u /scripts/images/publish.py
