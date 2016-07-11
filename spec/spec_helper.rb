@@ -17,12 +17,8 @@ set :docker_container_ready_regex, /Zend Framework 2 should be installed/
 
 set :docker_container_create_options, {
   'Image'      => @image.id,
-  'User'       => '100000',
-  'HostConfig' => {
-    'PortBindings' => { "#{LISTEN_PORT}/tcp" => [{ 'HostPort' => "#{LISTEN_PORT}" }] }
-  }
+  'User'       => '100000'
 }
-
 RSpec.configure do |c|
 
   describe 'tests' do
